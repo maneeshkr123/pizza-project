@@ -1,0 +1,107 @@
+<html>
+<head>
+<link rel="stylesheet" href="button.css" type="text/css">
+<script type="text/javascript">
+function validation()
+{
+for(i=0;i<=8;i++)
+{
+if(document.forms[0].elements[i].value=="")
+{
+alert("PLEASE FILL ALL THE FIELDS");
+			return false;
+}
+}
+
+   if(isNaN(frm.units.value)==true)
+   {
+   alert("enter units in whole no.");
+   return false;
+   }
+if(((frm.mob.value).length!=10)||(isNaN(frm.mob.value)==true))
+   {
+   alert("Enter valid mobile no.");
+   return false;
+   }
+    if(isNaN(frm.pinc.value)==true)
+   {
+   alert("enter pincode in nos.");
+   return false;
+   }
+}
+</script>
+</head>
+<body text=majenta   vlink="majenta" alink="majenta" link="majenta"   background="pizzahutbg.jpg">
+<form onsubmit="return validation()" action="data.php" method="post" name="frm">
+<center><b><font color=white face="Gabriola" size=6>KINDLY FILL ALL YOUR DETAILS TO PLACE YOUR ORDER</br></font></b></center>
+<font color=blue face= "Segoe UI">
+<table width="100%" height="70%">
+<tr align="center">
+<td><h1>
+Fullname :</h1></td><td><h1>
+<input type=text 
+name="custname"></h1></td>
+<tr align="center">
+<td><h1>Mobile No. :</h1></td><td><h1>
+<input type=text name="mob" maxlength="10"></h1></td>
+</tr>
+<tr align="center">
+<td><h1>Address :</h1></td><td><h1>
+<textarea cols=30 rows=5 name="add"></textarea></h1></td>
+</tr>
+<tr align="center">
+<td><h1>Pincode : </h1></td><td><h1>
+<input type=text name="pinc"></h1></td>
+</tr><tr align="center">
+<td><h1>Toppings: </h1></td><td><h1>
+<select>
+<option value=Tomatoes>Tomatoes</option>
+<option value=Cheese>Cheese</option>
+<option value=Peppers>Peppers</option>
+<option value=Olive>Olive</option>
+<option value=Paprika>Paprika</option>
+<option value=Mushrooms>Mushrooms</option>
+<option value=Sausage>Sausage</option>
+</select></h1></tr>
+<tr align="center">
+<td><h1>Size: </h1></td><td><h1>
+<select name="size">
+<option value=Small>Small</option>
+<option value=Medium>Medium</option>
+<option value=Large>Large</option>
+</select></h1></tr>
+<tr align="center">
+<td><h1>Item_code : </h1></td><td><h1>
+<select name="code">
+<option value=M1>M1</option>
+<option value=M2>M2</option>
+<option value=M3>M3</option>
+<option value=M4>M4</option>
+<option value=M5>M5</option>
+<option value=D1>D1</option>
+<option value=D2>D2</option>
+<option value=D3>D3</option>
+<option value=D4>D4</option>
+<option value=D5>D5</option>
+<option value=P1>P1</option>
+<option value=P2>P2</option>
+<option value=P3>P3</option>
+<option value=P4>P4</option>
+<option value=P5>P5</option>
+</select>
+</h1></td>
+</tr>
+<tr align="center">
+<td><h1>No. Of Items:-</h1></td><td><h1><input type="text" name="units"></h1></td>
+</tr>
+<tr align="center">
+<td colspan=2><input type="submit" name="btn" value="Place Order" class=register></h1></td>
+</tr></h1>
+</table></center>
+</form>
+<a href="formde.html">CLICK HERE TO REMOVE YOUR ORDER</A></br></br>
+<a href="update.html">CLICK HERE TO UPDATE YOUR ORDER</A></br></br>
+<a href="get.html">CLICK HERE TO GET DETAILS OF YOUR ORDER</A></br></br>
+
+</body>
+</html>

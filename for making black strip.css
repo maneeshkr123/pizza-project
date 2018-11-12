@@ -1,0 +1,8 @@
+#navmenu ul {margin: 0px; padding: 5px; 
+	list-style-type: none; list-style-image: none; }
+#navmenu li {display: inline; }
+#navmenu ul li a {text-decoration:none; font-family:Segoe Script;
+	padding: 5px 80px 5px 100px; color: white;
+	background: black;}
+#navmenu ul li a:hover {color: black;
+	background: aqua; }
